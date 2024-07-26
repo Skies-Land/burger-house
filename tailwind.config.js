@@ -307,10 +307,12 @@ export default {
       DEFAULT: '1',
     },
     fontFamily: {
+      'secondary': ['"Alfa Slab One"'],
       sans: [
         'ui-sans-serif',
         'system-ui',
         'sans-serif',
+        'Roboto',
         '"Apple Color Emoji"',
         '"Segoe UI Emoji"',
         '"Segoe UI Symbol"',
