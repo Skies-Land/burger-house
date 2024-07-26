@@ -135,6 +135,11 @@ export default {
     colors: ({ colors }) => ({
       inherit: colors.inherit,
       current: colors.current,
+
+      'primary': '#ffc045',
+      'secondary': '#3d2514',
+      'red-primary': '#bf2222',
+
       transparent: colors.transparent,
       black: colors.black,
       white: colors.white,

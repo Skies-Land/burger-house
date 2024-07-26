@@ -1,9 +1,10 @@
 import React from 'react'
+import Router from './Router'
 
 export default function App() {
   return (
     <div>
-      <h1>Burger House</h1>
+      <Router />
     </div>
   )
 }
