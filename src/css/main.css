@@ -5,6 +5,10 @@
 @tailwind utilities;
 body {
     font-family: 'Roboto', sans-serif;
+    @apply text-secondary;
+}
+p {
+    @apply mb-4;
 }
 .animate {
     -webkit-transition: all .2s ease-in-out;
