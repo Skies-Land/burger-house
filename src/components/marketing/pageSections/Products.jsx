@@ -15,7 +15,7 @@ export default function Products() {
             Toujours des délicieux Burgers
         </HeadingTitle>
 
-        <Heading theme='secondary'>
+        <Heading theme='secondary' alignement='center' className='my-5'>
             Choisissez et savourez
         </Heading>
 
@@ -34,7 +34,7 @@ export default function Products() {
                 </div>
 
                 <div className='flex flex-col items-center justify-center px-5 pb-5'>
-                    <Heading varient='h3'>
+                    <Heading varient='h3' className='my-5'>
                         Eggcellent Burger
                     </Heading>
                     <p className='text-center'>
@@ -52,11 +52,10 @@ export default function Products() {
                 </div>
 
                 <div className='flex flex-col items-center justify-center px-5 pb-5'>
-                    <Heading varient='h3'>
+                    <Heading varient='h3' className='my-5'>
                     Classic Cheeseburger
                     </Heading>
                     <p className='text-center'>
-                    
                         Double steak de boeuf, cheddar fondu, tomate, laitue, oignons caramélisé avec sauce spéciale.
                     </p>
                     <Button color='danger' className='font-secondary'>
@@ -71,11 +70,11 @@ export default function Products() {
                 </div>
 
                 <div className='flex flex-col items-center justify-center px-5 pb-5'>
-                    <Heading varient='h3'>
+                    <Heading varient='h3'className='my-5'>
                         Avocado Burger
                     </Heading>
                     <p className='text-center'>
-                    Steak de boeuf, purée d'avocat crémeuse, radis croquants, laitue fraîche avec sauce spéciale.
+                        Steak de boeuf, purée d'avocat crémeuse, radis croquants, laitue fraîche avec sauce spéciale.
                     </p>
                     <Button color='danger' className='font-secondary'>
                         Commandez

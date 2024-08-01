@@ -4,14 +4,17 @@ export default function Heading(props) {
 
     const { 
         children, // text
-        variant, // h2 or h3
+        variant, // h2, h3 or h4
         theme, // style
-        display // color
+        display, // color
+        alignement, // text alignement
+        className // custom class
     } = props;
 
-    const classDafault = 'mt-5 uppercase'
-    let font, color;
+    const classDafault = 'uppercase'
+    let font, color, align;
 
+    // style
     switch (theme) {
         case 'secondary':
             font = 'font-secondary'
@@ -21,6 +24,7 @@ export default function Heading(props) {
             break;
     }
 
+    // color
     switch (display) {
         case 'gray':
             color = 'text-gray-600'
@@ -30,19 +34,41 @@ export default function Heading(props) {
             break;
     }
 
+    // text alignement
+    switch (alignement) {
+        case 'center':
+            align = 'justify-center'
+            break;
+        case 'right':
+            align = 'justify-end'
+            break;
+        default:
+            align = 'justify-start'
+            break;
+    }
+
+    // h2, h3 or h4
     switch (variant) {
         case 'h3':
             return (
-                <div className='flex items-center justify-center my-5'>
-                    <h3 className={`text-2xl ${classDafault} ${font} ${color}`}>
+                <div className={`flex ${align}`}>
+                    <h3 className={`text-2xl ${classDafault} ${className} ${font} ${color}`}>
+                        {children}
+                    </h3>
+                </div>
+            )
+        case 'h4':
+            return (
+                <div className={`flex ${align}`}>
+                    <h3 className={`text-lg ${classDafault} ${className} ${font} ${color}`}>
                         {children}
                     </h3>
                 </div>
             )
         default:
             return (
-                <div className='flex items-center justify-center my-5'>
-                    <h2 className={` ${theme === 'secondary' ? 'text-5xl' : 'text-3xl'} ${classDafault} ${font} ${color}`}>
+                <div className={`flex ${align}`}>
+                    <h2 className={` ${theme === 'secondary' ? 'text-5xl' : 'text-3xl'} ${className} ${classDafault} ${font} ${color}`}>
                         {children}
                     </h2>
                 </div>
