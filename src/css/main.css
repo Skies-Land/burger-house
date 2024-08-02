@@ -5,6 +5,7 @@
 @tailwind utilities;
 body {
     font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
     @apply text-secondary;
 }
 p {

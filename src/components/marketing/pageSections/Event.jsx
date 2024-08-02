@@ -7,7 +7,7 @@ import EventImage2 from '../../../medias/images/event/joseph-pearson-FrmpLKLNgNw
 import EventImage3 from '../../../medias/images/event/pablo-merchan-montes-hyIE90CN6b0-unsplash.jpg'
 import Heading from '../../elements/displayTitle/Heading'
 
-const Slide = ({children, category, title, image}) => {
+const Slide = ({children, category, title, image, description}) => {
     return (
         <div className='grid grid-cols-2 p-6'> 
 
@@ -26,7 +26,7 @@ const Slide = ({children, category, title, image}) => {
 
             {/* Contenu du côté droit du carousel */}
             <div className='relative w-full h-full'>
-                <img src={image} alt="Photo d'événement sportif" className='bg-primary absolute top-0 left-0 w-full h-full object-cover object-bottom z-0' />
+                <img src={image} alt={description} className='bg-primary absolute top-0 left-0 w-full h-full object-cover object-bottom z-0' />
             </div>
         </div>
     )
@@ -39,6 +39,7 @@ export default function Event() {
             image={EventImage1}
             category='Événement à venir'
             title='Vivez une expérience unique'
+            description= 'Image célébrant un match de football'
         >
             Un match de football exceptionnel à vivre chez Burger House. Venez encourager 
             votre équipe préférée et profitez de nos offres spéciales. Durant cet événement, 
@@ -48,6 +49,7 @@ export default function Event() {
             image={EventImage2}
             category='Événement à venir'
             title='Une soirée en musique'
+            description= "Image d'une salle de concert."
         >
             Pour célébrer l'annonce de leur prochaine tournée, ''LE NOM DU GROUPE'' nous fait 
             l'honneur de vous proposez une soirée en musique où le groupe ''LE NOM DU GROUPE'' 
@@ -57,6 +59,7 @@ export default function Event() {
             image={EventImage3}
             category='Burger personnalisé'
             title='Composez votre propre burger'
+            description= "Image d'un burger personnalisé"
         >
             Chez Burger House, vous avez la possibilité de composer votre propre burger. 
             Choisissez votre pain, votre viande, vos légumes et votre sauce. Nous nous occupons du reste. 
