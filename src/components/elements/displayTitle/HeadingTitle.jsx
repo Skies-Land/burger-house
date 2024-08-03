@@ -7,7 +7,7 @@ export default function HeadingTitle(props) {
         variant // h2 or h3
     } = props;
 
-    const classDafault = 'px-7 py-3 bg-primary text-secondary uppercase font-bold inline-block'
+    const classDafault = 'px-7 py-3 bg-primary text-secondary rounded-md uppercase font-bold inline-block'
 
     switch (variant) {
         case 'h3':

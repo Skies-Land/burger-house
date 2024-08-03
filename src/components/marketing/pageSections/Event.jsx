@@ -9,24 +9,24 @@ import Heading from '../../elements/displayTitle/Heading'
 
 const Slide = ({children, category, title, image, description}) => {
     return (
-        <div className='grid grid-cols-2 p-6'> 
+        <div className='grid md:grid-cols-2 p-3 md:p-6'> 
 
             {/* Contenu du côté gauche du carousel */}
-            <div className='p-10 mb-10'>
+            <div className='p-5 md:p-10 md:mb-10'>
                 <Heading variant='h4'>
                     {category}
                 </Heading>
                 <Heading theme='secondary' variant='h3' className='mb-5'>
                     {title}
                 </Heading>
-                <p className='tracking-wide text-lg leading-relaxed font-light text-gray-800'>
+                <p className='tracking-wide text-lg leading-relaxed font-light text-gray-800 mb-0 md:mb-10'>
                     {children}
                 </p>
             </div>
 
             {/* Contenu du côté droit du carousel */}
-            <div className='relative w-full h-full'>
-                <img src={image} alt={description} className='bg-primary absolute top-0 left-0 w-full h-full object-cover object-bottom z-0' />
+            <div className='relative w-full h-96 md:h-full'>
+                <img src={image} alt={description} className='bg-primary absolute top-0 left-0 w-full h-full rounded-md  object-cover object-bottom z-0' />
             </div>
         </div>
     )
@@ -69,7 +69,7 @@ export default function Event() {
 
     return (
         <Container>
-            <div className='shadow-2xl mb-20 '>
+            <div className='shadow-2xl mb-20 rounded-md  border border-gray-100'>
                 <AliceCarousel 
                     mouseTracking // permet de suivre le carousel avec la souris
                     items={items} // contenu du carousel

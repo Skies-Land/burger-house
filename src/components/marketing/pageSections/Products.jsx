@@ -15,7 +15,7 @@ export default function Products() {
             Toujours des délicieux Burgers
         </HeadingTitle>
 
-        <Heading theme='secondary' alignement='center' className='my-5'>
+        <Heading theme='secondary' alignement='center' className='my-5 text-center'>
             Choisissez et savourez
         </Heading>
 
@@ -26,57 +26,57 @@ export default function Products() {
             Vous pouvez également composer votre propre menu.
         </p>
 
-        <div className='grid grid-cols-3 gap-x-1 mb-20 mt-10'>
+        <div className='grid lg:grid-cols-3 gap-x-1 mb-20 mt-10'>
             
-            <div className='w-full h-full'>
+            <div className='w-full md:w-2/3 lg:w-full  h-full mx-auto'>
                 <div className='relative w-full h-72'>
-                    <img src={Product1} alt='Un hamburger' className='bg-primary absolute top-0 left-0 w-full h-full object-cover z-0' />
+                    <img src={Product1} alt='Un hamburger' className='bg-primary absolute top-0 left-0 w-full h-full rounded-md object-cover z-0' />
                 </div>
 
                 <div className='flex flex-col items-center justify-center px-5 pb-5'>
-                    <Heading varient='h3' className='my-5'>
+                    <Heading varient='h3' className='my-5 lg:text-2xl'>
                         Eggcellent Burger
                     </Heading>
-                    <p className='text-center'>
-                        Steak de boeuf, œuf au plat avec le jaune coulant, laitue fraîche avec sauce fromagère.
+                    <p className='text-center lg:h-20'>
+                        Steak, œuf au plat avec le jaune coulant, laitue fraîche avec sauce fromagère.
                     </p>
-                    <Button color='danger' className='font-secondary'>
+                    <Button color='danger' className='font-secondary rounded-md mb-10 lg:mb-0'>
                         Commandez
                     </Button>
                 </div>
             </div>
 
-            <div className='w-full h-full'>
+            <div className='w-full md:w-2/3 lg:w-full  h-full mx-auto'>
                 <div className='relative w-full h-72'>
-                    <img src={Product2} alt='Un hamburger' className='bg-primary absolute top-0 left-0 w-full h-full object-cover z-0' />
+                    <img src={Product2} alt='Un hamburger' className='bg-primary absolute top-0 left-0 w-full h-full rounded-md object-cover z-0' />
                 </div>
 
                 <div className='flex flex-col items-center justify-center px-5 pb-5'>
-                    <Heading varient='h3' className='my-5'>
+                    <Heading varient='h3' className='my-5 lg:text-2xl'>
                     Classic Cheeseburger
                     </Heading>
-                    <p className='text-center'>
-                        Double steak de boeuf, cheddar fondu, tomate, laitue, oignons caramélisé avec sauce spéciale.
+                    <p className='text-center lg:h-20'>
+                        Double steak, cheddar fondu, tomate, laitue, oignons caramélisé avec sauce spéciale.
                     </p>
-                    <Button color='danger' className='font-secondary'>
+                    <Button color='danger' className='font-secondary rounded-md mb-10 lg:mb-0'>
                         Commandez
                     </Button>
                 </div>
             </div>
 
-            <div className='w-full h-full'>
+            <div className='w-full md:w-2/3 lg:w-full  h-full mx-auto'>
                 <div className='relative w-full h-72'>
-                    <img src={Product3} alt='Un hamburger' className='bg-primary absolute top-0 left-0 w-full h-full object-cover z-0' />
+                    <img src={Product3} alt='Un hamburger' className='bg-primary absolute top-0 left-0 w-full h-full rounded-md object-cover z-0' />
                 </div>
 
                 <div className='flex flex-col items-center justify-center px-5 pb-5'>
-                    <Heading varient='h3'className='my-5'>
+                    <Heading varient='h3'className='my-5 lg:text-2xl'>
                         Avocado Burger
                     </Heading>
-                    <p className='text-center'>
-                        Steak de boeuf, purée d'avocat crémeuse, radis croquants, laitue fraîche avec sauce spéciale.
+                    <p className='text-center lg:h-20'>
+                        Steak, purée d'avocat crémeuse, radis croquants, laitue fraîche avec sauce spéciale.
                     </p>
-                    <Button color='danger' className='font-secondary'>
+                    <Button color='danger' className='font-secondary rounded-md lg:mb-0'>
                         Commandez
                     </Button>
                 </div>
