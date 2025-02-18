@@ -9,7 +9,7 @@ Landing page de restaurant de burgers
 - Utilisation de **`switch case`** dans les composants **`Button`**, **`Heading`** et **`HeadingTitle`**, me permettant de gérer les rendus de manière structurée et lisible, afin de centraliser la logique de décision dans un seul endroit.
 - Intégration du composant **[react-alice-carousel](https://www.npmjs.com/package/react-alice-carousel)** pour l'ajout d'un carrousel animée
 - Adaptation des différentes sections de la landing page à tous type d'écran avec le **[Responsive Design de Tailwind CSS](https://tailwindcss.com/docs/responsive-design)**
-- Déploiement du projet sur **[Firebase](https://firebase.google.com/)**
+- Déploiement du projet sur **[Netlify](https://www.netlify.com/)**
 
 ## 🔎 Accès au projet - [Burger House](https://burger-house-by-jonathan-araldi.netlify.app/)
 ![preview](https://github.com/user-attachments/assets/276ac340-955f-4c54-b5c9-e8f28ad5cbf0)
