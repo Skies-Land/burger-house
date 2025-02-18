@@ -11,7 +11,7 @@
 ---
 
 ## 📖 Description
-Projet développé en suivant le cours **[Remote Monkey](https://youtube.com/playlist?list=PLtKaauZVThjDU0MtbTq29AWcCQpslv1PV&si=wC5gLhmDNTMToojJ)**.
+Projet développé en suivant un cours de **[Remote Monkey](https://www.youtube.com/@remotemonkey/videos)**.
 
 - Initialisé avec **[Vite.js](https://vitejs.dev/)**
 - Développé avec **[React](https://fr.react.dev/)** et **[Tailwind CSS](https://tailwindcss.com/)**
