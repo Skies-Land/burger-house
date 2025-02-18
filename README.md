@@ -57,10 +57,6 @@ src/
 │
 ├── pages/                # Pages principales
 │   └── HomePage.jsx      # Page d'accueil
-│
-└── public/               # Fichiers statiques
-    ├── favicon.ico       # Icône du site
-    └── manifest.json     # Configuration PWA
 
 ```
 ## 🚀 Installation et exécution
